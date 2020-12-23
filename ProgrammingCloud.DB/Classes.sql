@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Classes]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Title] NVARCHAR(200) NOT NULL, 
+    [CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE()
+)
