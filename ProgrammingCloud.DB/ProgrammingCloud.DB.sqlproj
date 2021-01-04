@@ -60,5 +60,9 @@
   <ItemGroup>
     <Build Include="Classes.sql" />
     <Build Include="Users.sql" />
+    <Build Include="UserClassRelation.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="ProgrammingCloud.DB.refactorlog" />
   </ItemGroup>
 </Project>
