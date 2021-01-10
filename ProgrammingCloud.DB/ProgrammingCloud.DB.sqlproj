@@ -61,6 +61,7 @@
     <Build Include="ClassRooms.sql" />
     <Build Include="Users.sql" />
     <Build Include="UserClassRoomRelations.sql" />
+    <Build Include="ClassRoomInvites.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ProgrammingCloud.DB.refactorlog" />

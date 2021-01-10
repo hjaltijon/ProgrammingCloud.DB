@@ -49,4 +49,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Email" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ffdbd552-6989-4680-b13b-1d4e15718312" ChangeDateTime="01/08/2021 14:38:06">
+    <Property Name="ElementName" Value="[dbo].[Users].[EmailConfirmationToken]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VerifyEmailToken" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4ddc0ce-089e-4414-b623-e9c87f24c570" ChangeDateTime="01/09/2021 16:03:35">
+    <Property Name="ElementName" Value="[dbo].[Users].[VerifyEmailToken]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VerifyEmailTokenHash" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="83e49ab1-4908-4f5e-81dd-8cc7496029da" ChangeDateTime="01/09/2021 18:33:53">
+    <Property Name="ElementName" Value="[dbo].[Users].[VerifyEmailTokenExpiryDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="VerifyEmailTokenCreatedDate" />
+  </Operation>
 </Operations>
