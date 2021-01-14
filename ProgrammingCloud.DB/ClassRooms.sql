@@ -1,6 +1,6 @@
-﻿CREATE TABLE [dbo].[ClassRooms]
+﻿CREATE TABLE [dbo].[Classrooms]
 (
-	[ClassRoomId] INT IDENTITY NOT NULL PRIMARY KEY, 
+	[ClassroomId] INT IDENTITY NOT NULL PRIMARY KEY, 
     [Title] NVARCHAR(200) NOT NULL, 
     [CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE(), 
     [TeacherId] INT NOT NULL, 
@@ -9,4 +9,4 @@
 
 GO
 
-CREATE INDEX [IX_ClassRooms_TeacherId] ON [dbo].[ClassRooms] ([TeacherId])
+CREATE INDEX [IX_ClassRooms_TeacherId] ON [dbo].[Classrooms] ([TeacherId])

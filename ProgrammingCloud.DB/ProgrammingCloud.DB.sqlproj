@@ -58,10 +58,10 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="ClassRooms.sql" />
+    <Build Include="Classrooms.sql" />
     <Build Include="Users.sql" />
-    <Build Include="UserClassRoomRelations.sql" />
-    <Build Include="ClassRoomInvites.sql" />
+    <Build Include="UserClassroomRelations.sql" />
+    <Build Include="ClassroomInvites.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ProgrammingCloud.DB.refactorlog" />

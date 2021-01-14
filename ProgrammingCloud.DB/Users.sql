@@ -13,7 +13,10 @@
 )
 
 
-
 GO
 
 CREATE INDEX IX_Users_Email ON Users (Email)
+
+GO
+
+CREATE UNIQUE INDEX UN_Users_EmailIsemailverified ON Users (Email, IsEmailVerified)

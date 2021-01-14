@@ -1,13 +1,13 @@
-﻿CREATE TABLE [dbo].[UserClassRoomRelations]
+﻿CREATE TABLE [dbo].[UserClassroomRelations]
 (
 	[UserId] INT NOT NULL, 
-    [ClassRoomId] INT NOT NULL,
+    [ClassroomId] INT NOT NULL,
 	[CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE(), 
-    CONSTRAINT PK_UserClassRoomRelations PRIMARY KEY (UserId, ClassRoomId),
-	CONSTRAINT [FK_UserClassRoomRelations_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([UserId]),
-	CONSTRAINT [FK_UserClassRoomRelations_Classes] FOREIGN KEY ([ClassRoomId]) REFERENCES [ClassRooms]([ClassRoomId])
+    CONSTRAINT PK_UserClassroomRelations PRIMARY KEY (UserId, ClassroomId),
+	CONSTRAINT [FK_UserClassroomRelations_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([UserId]),
+	CONSTRAINT [FK_UserClassroomRelations_Classes] FOREIGN KEY ([ClassroomId]) REFERENCES [Classrooms]([ClassroomId])
 )
 
 GO
 
-CREATE INDEX [IX_UserClassRelations_ClassId] ON [dbo].[UserClassRoomRelations] ([ClassRoomId])
+CREATE INDEX [IX_UserClassroomRelations_ClassroomId] ON [dbo].[UserClassroomRelations] ([ClassroomId])
