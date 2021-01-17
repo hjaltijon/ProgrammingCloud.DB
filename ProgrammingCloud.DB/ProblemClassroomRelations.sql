@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ProblemClassroomRelations]
 (
-	[ClassroomId] INT NOT NULL PRIMARY KEY, 
+	[ClassroomId] INT NOT NULL, 
     [ProblemId] INT NOT NULL, 
     [CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE(),
     CONSTRAINT PK_ProblemClassroomRelations PRIMARY KEY (ClassroomId, ProblemId),
