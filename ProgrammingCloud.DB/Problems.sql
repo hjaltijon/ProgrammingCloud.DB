@@ -6,6 +6,7 @@
     [UserId] INT NOT NULL, 
     [CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE(),
     [Title] NVARCHAR(200) NOT NULL, 
+    [Description] NVARCHAR(4000) NULL, 
     CONSTRAINT [FK_Problems_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([UserId])
 )
 
