@@ -8,15 +8,11 @@
     [Salt] NVARCHAR(255) NULL, 
     [CreatedDate] DATETIME2 NOT NULL DEFAULT GETDATE(), 
     [IsEmailVerified] BIT NOT NULL, 
-    [VerifyEmailTokenHash] NVARCHAR(100) NOT NULL, 
-    [VerifyEmailTokenCreatedDate] DATETIME2 NOT NULL
+    [VerifyEmailTokenHash] NVARCHAR(100) NULL, 
+    [VerifyEmailTokenCreatedDate] DATETIME2 NULL
 )
 
 
 GO
 
-CREATE INDEX IX_Users_Email ON Users (Email)
-
-GO
-
-CREATE UNIQUE INDEX UN_Users_EmailIsemailverified ON Users (Email, IsEmailVerified)
+CREATE UNIQUE INDEX UN_Users_Email ON Users (Email)
